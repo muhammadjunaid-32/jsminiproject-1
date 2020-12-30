@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background</title>
+</head>
+<body>
+    <div class="container">
+        <input type="color" name="inp" id="inp" onclick="change()"><br>
+        <span id="text"></span><h3>Color selected</h3>
+    </div>
+    
+    <script>
+        var color = document.getElementById('inp');
+        var text = document.getElementById('text');
+        
+        function change(){
+            document.body.style.backgroundColor = color.value;
+            document.getElementById('text').innerHTML = color.value
+        }
+        
+            </script>
+</body>
+</html>
